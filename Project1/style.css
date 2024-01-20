@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Figtree;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: hsl(47, 88%, 63%);
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid #000;
+    border-radius: 12px;
+    width: 445px;
+    height: 580px;
+    padding: 16px;
+    box-shadow: 5px 5px #000;
+}
+.upper-portion{
+    height: 40%;
+    width: 100%;
+    margin-bottom: 18px;
+}
+.upper-portion img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: top;
+}
+.lower-portion{
+    position: relative;
+    height: 60%;
+    width: 100%;
+}
+button{
+    margin-bottom: 14px;
+    padding: 8px 14px;
+    background-color: hsl(47, 88%, 63%);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+p.date{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.lower-portion h1{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.lower-portion h1:active{
+    color: hsl(47, 88%, 63%);
+    /*cursor: url('black-cursor.png'), auto;*/
+}
+.lower-portion .text{
+    font-size: 16px;
+    line-height: 28px;
+    color: hsl(0, 0%, 50%);
+}
+.credit{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 18px;
+}
+.credit-pic{
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.credit-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.credit h5{
+    font-weight: 800;
+}
+@media(max-width:640px){
+    .card{
+        width: 375px;
+    }
+}
